@@ -3,7 +3,7 @@ COMMENT = '#'
 climate_data = open('data/sc_climate_data_10.csv', 'r')
 
 
-def FahrToCelsius(fahr):
+def fahr_to_celsius(fahr):
     """COnverts fahrenehit to celsius
 
     Args:
@@ -14,7 +14,7 @@ def FahrToCelsius(fahr):
     """
     celsius = ((fahr - 32) * (5/9)) 
     return celsius
-def FahrToKelvin(fahr):
+def fahr_to_kelvin(fahr):
     kelvin = FahrToCelsius(fahr) + 273.15
     return kelvin
 
